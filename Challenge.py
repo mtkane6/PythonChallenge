@@ -1,7 +1,7 @@
 import string
 
 """
-This program accepts as input an 8x8 grid of letters, and a list of words.
+This program accepts as input a grid of letters of any size, and a list of words.
 In this case the list of words is the full text of Shakespeare's "Love Labour's Lost."
 The list of words has been stripped of white space and punctuation.
 
@@ -181,13 +181,3 @@ grid = [["E","X","T","R","A","H","O","P"],
 # call to solution, prints longest word found in the grid using legal knigh-moves
 print(Wordsearch(grid, words))
 
-
-
-
-#### my practice an test codes, will be removed before submission
-# wordsOnly = [f.strip(string.punctuation) for word in words]
-# print(wordsOnly)
-# twoDarray = ["tar.","is!"]
-# print(twoDarray)
-# twoDarray = [word.strip(string.punctuation) for word in twoDarray]
-# Wordsearch(words)
