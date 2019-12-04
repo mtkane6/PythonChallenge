@@ -46,7 +46,6 @@ def Wordsearch(grid, wordList):
 
     # turn word list into dict, mapping word to length, w/ no duplicates
     wordDict = {i.upper():len(i) for i in wordList}
-    # print(wordDict)
 
     #starting with longest word, if all letters in grid, begin finding them, else remove from dictionary.
     for i in range(len(wordDict)):
@@ -178,6 +177,13 @@ grid = [["E","X","T","R","A","H","O","P"],
         ["Q","W","O","P","M","T","C","P"],
     [   "K","I","P","A","C","K","E","T"]]
 
-# call to solution, prints longest word found in the grid using legal knigh-moves
+# call to solution, prints longest word found in the grid using legal knight-moves
 print(Wordsearch(grid, words))
 
+#### my practice and test codes
+# wordsOnly = [f.strip(string.punctuation) for word in words]
+# print(wordsOnly)
+# twoDarray = ["tar.","is!"]
+# print(twoDarray)
+# twoDarray = [word.strip(string.punctuation) for word in twoDarray]
+# Wordsearch(words) 
